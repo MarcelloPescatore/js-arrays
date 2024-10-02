@@ -30,7 +30,7 @@ teachers.push('Vanessa');
 console.log(teachers);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
-teachers.splice(0, 0, 'Sarah')
+teachers.unshift('Sarah')
 console.log(teachers);
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
@@ -54,9 +54,5 @@ console.log(teachersString);
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.length;
-if (isTeachersEmpty === 0){
-  console.log("l'array è vuoto");
-} else {
-  console.log("l'array non è vuoto");
-}
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty);
